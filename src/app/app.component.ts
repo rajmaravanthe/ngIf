@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title : string;
+  firstName : string;
+  lastName : string;
+  clicked : boolean = false;
+
+  displayTitle () {
+    this.clicked = true;
+    this.title = `${this.firstName}  ${this.lastName}`
+  }
 }

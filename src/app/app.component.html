@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+My page is <h3 *ngIf="clicked"> {{title}}</h3><br/>
+First Name: <input type="text" name="firstName" [(ngModel)]="firstName" /><br/>
+Last Name: <input type="text" name="lastName" [(ngModel)]="lastName" /><br/>
+<button (click)="displayTitle()">Submit</button>
